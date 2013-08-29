@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Titanium & Alloy: Why it ill blow your mind.</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Titanium & Alloy</h1>
+					<h3>Why it will blow your mind</h3>
+					<p>
+						<small>By <a href="http://CodexLabs.com">Andrew McElroy</a> / <a href="http://twitter.com/codexlabs">@CodexLabs </a> <a href="http://twitter.com/sophrinix">@sophrinix</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>WHO am i</h2>
+					<p>
+
+					</p>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+
+				<section>
+				<h2> Background </h2>
+				<p>
+					Who's ever done mobile development. Titanium, Alloy, Backbone? 
+				</p>
+
+				<aside class="notes">
+
+				</aside>
+				</section>
+				
+				<section>
+				<h1>Mobile is Massive</h1>
+				<img src="assets/Mobile-vs-Desktop-morgan-stanley.png">
+				</section>
+				
+				<section>
+				<h2>Mobile is Diverse</h2>
+				<img src="assets/imgs/multios.png">
+				</section>
+				
+		
+				
+				<section>
+				<h3>There is an expectation for good UX</h3>
+				<img src="assets/imgs/uxexpect.png">
+				<p>source:http://www.uxbooth.com/blog/12207/	 </p>
+				</section>
+
+				<section>
+				<h1>Enter Titanium</h1>
+				<div style="margin-left:150px;height:600px;width:600px;">
+					<div style="float:left">
+				<img src="assets/imgs/titanium.png">
+				</div>
+				<div style="float:right">
+				<img src="assets/imgs/appcelerator-logo.png">
+				</div>
+				</div>
+				</section>
+					<section>
+					<h1>Open Source</h1>
+					<p>Apache 2 License</p>
+					<a href="Github.com/appcelerator/titanium_mobile">Github.com/appcelerator/titanium_mobile</a>
+					</section>
+
+
+				<section>
+					<h2>Problems with traditional Titanium</h2>
+					<small>
+						Quick side note b2i lets you build apps straight to an iphone without going through iTunes. :-)
+				<a href="https://github.com/Sophrinix/xcode-build-to-device">https://github.com/Sophrinix/xcode-build-to-device</a>	</small>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+				
+				<section>
+					<h2>Ti.Platforms</h2>
+					<p>
+					Titanium 3.0 - iOS, Android, Blackberry 10, Mobile Web, Tizen<br>
+					(OS_IOS) || (OS_ANDROID) || (OS_BLACKBERRY) || (OS_MOBILEWEB) || (OS_TIZEN) 
+					<br><br>
+					Titanium 4.0 (Codenamed Ti.Next) 3.x targets -  Plus Windows 8 Mobile
+						
+					</p>
+
+					<aside class="notes">
+						Ti.next will be super ambitious, they plan to bridge to LLVM Bytecode directly. Which according to Jeff Haynie (appcelerator CEO) will alloy titanium to run faster in some cases than developing in Obj-C in the first place. We'll see. 
+					</aside>
+				</section>
+				
+				<section>
+					<h2>ALLOY</h2>
+					<img src="img/alloy.png" border="0" /><br>
+					<a href="https://github.com/appcelerator/alloy">https://github.com/appcelerator/alloy</a>
+					
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+				
+			
+				
+				
+				<section>
+					<h2>Goodies</h2>
+					<p>
+						A collection of my favorite things Alloy* brings to the table
+					</p>
+					<small>Either Alloy, Titanium 3.0, or the community in all fairness. I'm ignoring the Enterprise stack in this talk. </small>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+		
+					<section>
+						<h2>The Licensing</h2>
+						<p>
+						Alloy and Titanium are both Apache Public License, version 2 licensed.</p><p> There are no secrets. You can figure out how anything along the stack works. 
+						</p>
+
+						<aside class="notes">
+							this may seem like a cop out, but this is critical. You will never get stuck in titanium. You can always bring along module native functionality. 
+						</aside>
+					</section>
+					
+				<section>
+					<h2>MVC</h2>
+					<p>
+					
+					</p>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+				
+				<section>
+					<h2>Controllers</h2>
+					<p>
+					Controllers are also where you can do any "traditional" titanium development if there isn't an XML or otherwise "alloy way" to do things. This prevents you from ever being boxed into Alloy.
+					</p>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+				
+				<section>
+					<h2>Views</h2>
+					<p>
+					
+					</p>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+				
+				<section>
+					<h2>TSS Styles</h2>
+					<p>
+					  Historically, Titanium 1.x and later supported JSS, but no one knew about it and/or used it. That's a real shame.
+					</p>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+				
+				<section>
+					<h2>Themes</h2>
+					<p>
+						 
+					</p>
+
+					<aside class="notes">
+						
+					</aside>
+				</section>
+				
+				<section>
+					<h2>Widgets</h2>
+					<p>
+				
+					</p>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+				
+				<section>
+					<h2>Migrations</h2>
+					<p>
+					
+					</p>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+				
+				<section>
+					<h2>Sync Adapters</h2>
+					<p>
+					
+					</p>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+			
+				
+				<section>
+					<h2>Built-ins</h2>
+					<p>
+					 node build, package.json, backbone, Underscore, animations, momentjs 
+					</p>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+				
+				<section>
+					<h2>List Views</h2>
+					<p>
+					
+					</p>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+				
+				<section>
+					<h2>Native Modules</h2>
+					<p>
+					
+					</p>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+				
+				<section>
+					<h2>Ti Shadow </h2>
+					<p>
+					
+					</p>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+				
+					<section>
+						<h2>Unit Testing </h2>
+						<p>
+						 Actual real Jasmine unit testing. Here's how. more to come. Drillbit also still seems to be used.
+						</p>
+
+						<aside class="notes">
+
+						</aside>
+					</section>
+					
+
+
+					<section>
+						<h2>Cucumber Testing</h2>
+						<p>
+						WIP - work in progress
+						</p>
+
+						<aside class="notes">
+
+						</aside>
+					</section>
+
+
+				<section>
+					<h2>Community Resources</h2>
+					<p>
+						
+					</p>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+				
+			
+				
+				<section>
+					<h1>END</h1>
+				<p>Special Thanks to <br><img src="img/Avatar-Logo-No-Tag.png" /><br>Also, We have a September Titanium TCD and TCE class in nashville  and online. </p><a href="https://www.eventbrite.com/event/8087023505">September 16 - 20, 2013 TCD & TCE https://www.eventbrite.com/event/8087023505 </a>
+				</section>
+				
+				
+				<section>
+					<h1>Questions?</h1>
+			
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
